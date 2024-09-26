@@ -4,7 +4,7 @@
     <title>Aloysius HSS</title>
       <link rel="stylesheet" href="main.css">
       <link rel="stylesheet" href="anim.css">
-
+      <script src="script.js"></script>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,13 +24,22 @@
     </nav>
    
     <p class="wel-text">WELCOME TO THE WEBSITE OF<br>ST ALOYSISUS HSS ELTHURUTH</p>
-    <a class="apply-link">
-    <div class="apply">
-      <img src="images/logo.png">
-      <h2>APPLY NOW</h2>
-    </div>
+    <a class="apply-link" href="apply-form.html">
+      <div class="apply">
+        <img src="images/logo.png">
+        <h2>APPLY NOW</h2>
+      </div>
     </a>
 
+
     </section>
+    <script>
+      var LenregNo;
+function reg(){
+  if(LenregNo = document.querySelector('.regNo').value.len===6){
+    document.querySelector('.regNo-c p') = "Valid!";
+}
+}
+    </script>
   </body>
 </html>

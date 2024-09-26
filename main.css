@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Tektur", sans-serif;
+  color: white;
 }
 
 ul{
@@ -137,4 +138,59 @@ table tr{
   font-weight: bold;
   font-size: 20px;
 
+}
+
+.form-parent-c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-c{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100vh;
+  padding: 30px 30px 30px 30px;
+  border-radius: 40px;
+  border: solid 5px white;
+  
+}
+form label{
+  color: white;
+  font-family: "Tektur", sans-serif;
+  font-size: 24px;
+}
+form input{
+  background-color: gray;
+  outline: none;
+  padding: 5px 15px 5px 15px;
+  color: black;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+}
+form .dot-sel input{
+  height: auto;
+}
+form input::placeholder{
+  color: black;
+}
+.form-grid{
+  column-gap: 2rem;
+}
+.form-grid div{
+  margin-bottom: 15px;
+  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
