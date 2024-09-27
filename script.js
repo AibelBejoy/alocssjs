@@ -60,7 +60,7 @@ document.querySelector('.DOB-y').addEventListener('input', validateDOB);
 function validatemailId() {
   let isValid = true;
   let mailId = document.querySelector('.mailId input').value;
-  if (/[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(mailId)) {
+  if (/[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(mailId)) {
     isValid = true;
   }
   else {
@@ -84,10 +84,10 @@ document.querySelector('.mailId input').addEventListener('input', validatemailId
 
 function submit(){
   if(validation){
-    document.querySelector('.validation').innerHTML="VALID!!";
+    document.querySelector('.validation').innerHTML="FORM VALID!!";
   }
   else{
-    document.querySelector('.validation').innerHTML="INVALID!!";
+    document.querySelector('.validation').innerHTML="FORM INVALID!!";
   }
 }
 document.querySelector('.formsubmit').addEventListener('click', submit);

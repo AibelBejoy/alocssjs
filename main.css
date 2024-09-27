@@ -5,7 +5,9 @@
   font-family: "Tektur", sans-serif;
   color: white;
 }
-
+body{
+  animation: fadeuniversal .4s forwards;
+}
 ul{
   display: flex;
   justify-content: end;
