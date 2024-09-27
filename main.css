@@ -176,7 +176,7 @@ form input{
   border-radius: 10px;
   height: 40px;
 }
-form .dot-sel input{
+form .Gender input{
   height: auto;
 }
 form input::placeholder{
