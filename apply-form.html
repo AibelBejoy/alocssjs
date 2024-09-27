@@ -5,7 +5,7 @@
     <title>Aloysius HSS</title>
       <link rel="stylesheet" href="main.css">
       <link rel="stylesheet" href="anim.css">
-      <script src="script.js"></script>
+      
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
       <p class="wel-text" style="margin-top: 0px;margin-bottom: 20px;font-size: 30px;">APPLICATION FORM</p>
       <div class="form-parent-c">
         <div class="form-c" >
-          <form method="post">
+          <form method="get" >
             <div class="form-grid">
 
               <div class="regNo-c">
@@ -38,7 +38,9 @@
 
               <div class="DOB-c">
                 <label>Date of birth:</label><br>
-                <input class="DOB" type="text" placeholder="DD/MM/YYYY" maxlength="9" oninput="dob()">
+                <input class="DOB-d" type="text" placeholder="DD" maxlength="2">&nbsp;/&nbsp;
+                <input class="DOB-m" type="text" placeholder="MM" maxlength="2">&nbsp;/&nbsp;
+                <input class="DOB-y" type="text" placeholder="YYYY" maxlength="4">
                 <p></p>
               </div>
 
@@ -51,23 +53,26 @@
               
               <div class="mailId">
                 <label>Email:</label><br>
-                <input type="text" placeholder="Enter you mail id" maxlength="6">
+                <input type="email" placeholder="Enter you mail id" maxlength="24">
+                <p></p>
               </div>
               <div class="userId">
                 <label>Username:</label><br>
-                <input type="text" placeholder="Set your Username" maxlength="6">
+                <input type="text" placeholder="Set your Username" maxlength="6" pattern="">                
               </div>
 
               <div class="Password">
                 <label>Password:</label><br>
-                <input type="text" placeholder="Set your 6 digit Password" maxlength="6">
+                <input type="password" placeholder="Set your 6 digit Password" maxlength="6">
               </div>
-
-          </div>
-
+              
+              <p class="validation">Hi</p>
+            </div>
           </form>
+          <button  class="formsubmit" style="background-color: black;height: 30px;margin-top: 400px;outline: none;border: solid 2px white; border-radius: 4px; padding: 5px 5px 5px 5px;">Valid?</button>
         </div>
       </div>
     </section>  
+    <script src="script.js"></script>
   </body>
 </html>
