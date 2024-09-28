@@ -1,5 +1,5 @@
 var validation;
-var regNo, dayValue, monthValue, yearValue, userId, password, mailId;
+var regNo, dayValue, monthValue, yearValue, userId, password, mailId, Gender;
 
 function reg() {
   regNo = +document.querySelector('.regNo').value;
@@ -66,7 +66,7 @@ function validateUserId() {
     if (userId.length >= 4) {
       isValid = true;
     } else {
-      document.querySelector('.userId p').innerHTML = "Username must contain <br> atleast 4 characters.";
+      document.querySelector('.userId p').innerHTML = "Username must contain <br> at least 4 characters.";
       isValid = false;
     }
   } else {
@@ -98,17 +98,18 @@ function validatePassword() {
     document.querySelector('.Password p').innerHTML = "Valid!";
     return true;
   } else {
-    document.querySelector('.Password p').innerHTML = "Password must contain<br> atleast 6 characters.";
+    document.querySelector('.Password p').innerHTML = "Password must contain<br> at least 6 characters.";
     return false;
   }
 }
 
 document.querySelector('.Password input').addEventListener('input', validatePassword);
-//not my
-function validateGender() {
-  let isGenderSelected = document.querySelector('input[name="gender"]:checked') !== null;
 
-  if (isGenderSelected) {
+function validateGender() {
+  Gender = document.querySelector('input[name="gender"]:checked');
+
+  if (Gender) {
+    selectedGender = Gender.value;
     document.querySelector('.Gender p').innerHTML = " ";
     return true;
   } else {
@@ -116,24 +117,66 @@ function validateGender() {
     return false;
   }
 }
-//my
 
 document.querySelector('.Gender #male').addEventListener('change', validateGender);
 document.querySelector('.Gender #female').addEventListener('change', validateGender);
 document.querySelector('.Gender #other').addEventListener('change', validateGender);
 
 function validityCheck() {
+  event.preventDefault();
   let regValid = reg();
   let dobValid = validateDOB();
   let emailValid = validateEmailId();
   let userIdValid = validateUserId();
   let passwordValid = validatePassword();
   let genderValid = validateGender();
-  if (regValid && dobValid && emailValid && userIdValid && passwordValid) {
+
+  if (regValid && dobValid && emailValid && userIdValid && passwordValid && genderValid) {
     document.querySelector('.validationText').innerHTML = "Form is valid!";
+    return true;
   } else {
     document.querySelector('.validationText').innerHTML = "Form is invalid!";
+    return false;
   }
 }
 
-document.querySelector('.formsubmit').addEventListener('click', validityCheck);
+document.querySelector('.formvalid').addEventListener('click', validityCheck);
+//not mine
+function sendMail(params) {
+  const serviceID = "service_cr37hwp";
+  const templateID = "template_7q9eaqe";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      console.log(res);
+      alert("Your message was sent successfully!");
+    })
+    .catch(err => console.log(err));
+}
+
+function emailSend(event) {
+  event.preventDefault();
+  
+  let formValid = validityCheck();
+
+  if (formValid) {
+    const params = {
+      regNo: regNo,
+      dob: `${dayValue}-${monthValue}-${yearValue}`,
+      gender: selectedGender,
+      email: mailId,
+      username: userId,
+      password: password,
+    };
+
+    sendMail(params);
+    console.log("Email sent successfully");
+    setTimeout(() => window.location.href = 'apply-form-received.html', 3000);
+
+  } else {
+    document.querySelector('.validationText').innerHTML = "Form is invalid!";
+    console.log("Email not sent");
+  }
+}
+
+document.querySelector('.formsubmit').addEventListener('click', emailSend);
