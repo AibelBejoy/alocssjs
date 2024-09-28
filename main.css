@@ -51,7 +51,7 @@ nav a{
   text-decoration: none;
 }
 .one{
-  background-image: url(images/bg1.jpg);
+  background-image: url(images/temp.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -97,16 +97,15 @@ table tr{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
   margin-top: 140px;
 }
 .apply img{
-  height: 200px;
+  height: 140px;
   border-bottom: solid 4px white;
 }
 
 .apply h2{
-  font-size: 45px;
+  font-size: 35px;
   color: white;
   
 }
