@@ -200,6 +200,7 @@ table tr{
   align-items: center;
   flex-wrap: wrap;
   height: auto;
+  z-index: 400;
 }
 .form-c{
   display: flex;
@@ -212,6 +213,7 @@ table tr{
   padding: 30px 30px 30px 30px;
   border-radius: 40px;
   border: solid 5px white;
+  z-index: 400;
 
 }
 form label{
@@ -241,7 +243,6 @@ form input::placeholder{
   color: white;
   align-items: center;
   flex-wrap: wrap;
-  gap: ;
   
 }
 .form-grid{
