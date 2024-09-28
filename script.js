@@ -141,7 +141,14 @@ function validityCheck() {
 }
 
 document.querySelector('.formvalid').addEventListener('click', validityCheck);
+
+
+
+
+
+//------------------------------------------------IGNORE---------------------------------------------------//
 //not mine
+//EMAILJS.SCRIPT RELATED - START
 function sendMail(params) {
   const serviceID = "service_cr37hwp";
   const templateID = "template_7q9eaqe";
@@ -149,11 +156,13 @@ function sendMail(params) {
   emailjs.send(serviceID, templateID, params)
     .then(res => {
       console.log(res);
-      alert("Your message was sent successfully!");
+      alert("Your message was sent successfully!");a
     })
     .catch(err => console.log(err));
 }
+//EMAILJS-OVER
 
+//EMAIL SENDING START
 function emailSend(event) {
   event.preventDefault();
   
@@ -180,3 +189,5 @@ function emailSend(event) {
 }
 
 document.querySelector('.formsubmit').addEventListener('click', emailSend);
+//EMAIL SENDING OVER
+//----------------------------------------------------------------------------------------------------//

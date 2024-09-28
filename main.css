@@ -7,15 +7,56 @@
 }
 body{
   animation: fadeuniversal .4s forwards;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  background-clip: cover;
+  background-image:  url(images/school.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  background-attachment: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 ul{
   display: flex;
   justify-content: end;
-  align-items: center;
   list-style: none;
-  height: 120px;
   background-color: transparent;
   flex-wrap: wrap;
+}
+
+.nav-one{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  height: 65px;
+  z-index: 200;
+
+}
+
+.logo-grid{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+}
+.nav-one button{
+  margin-top: 0px;
+}
+
+.nav-two {
+  position: fixed;
+  margin-top: 65px;
+  left: 0;
+  right: 0;
+  background-color: rgb(60, 60, 190);
+  height: 40px;
+  z-index: 10; 
 }
 
 nav button {
@@ -30,34 +71,47 @@ nav button {
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  margin-top: 5px;
+  z-index: 20;
+  transition: filter .2s;
 }
 
-nav button::before {
+.c-us:hover{
+  filter: drop-shadow(black 1px 1px 20px);
+  z-index: 60;
+}
+.nav-two button::before {
   content: " ";
-  height: 5px;
+  height: 3px;
   width: 0%;
   position: absolute;
   left: 0px;
-  bottom: -5px;
+  bottom: -2px;
   background-color: white;
   transition: width .5s;
+
 }
 
-nav button:hover::before {
+.nav-two button:hover::before {
   width: 100%;
-  height: 5px;
+  height: 3px;
+  z-index: 2;
 }
 nav a{
   text-decoration: none;
 }
-.one{
-  background-image: url(images/temp.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  overflow-x: hidden;
 
+.one {
+
+  height: 100vh; 
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
+
+
 /*
 .border{
   height: 100vh;
@@ -69,15 +123,14 @@ nav a{
   position: relative;
 }*/
 
-.wel-text{
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  font-size: 45px;
+.wel-text {
+  position: absolute;
   font-weight: bold;
+  font-size: 30px;
+  z-index: 1;
+  padding-bottom: 400px;
   text-align: center;
-  animation: fade 2s forwards;
+  filter: drop-shadow(black 4px 4px 4px);
 }
 
 table{
@@ -100,12 +153,12 @@ table tr{
   margin-top: 140px;
 }
 .apply img{
-  height: 140px;
+  height: 120px;
   border-bottom: solid 4px white;
 }
 
 .apply h2{
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   
 }
@@ -155,7 +208,7 @@ table tr{
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
-  width: 110vh;
+  width: 120vh;
   padding: 30px 30px 30px 30px;
   border-radius: 40px;
   border: solid 5px white;
@@ -188,6 +241,7 @@ form input::placeholder{
   color: white;
   align-items: center;
   flex-wrap: wrap;
+  gap: ;
   
 }
 .form-grid{
@@ -214,3 +268,4 @@ form input::placeholder{
   padding-right: 15px;
 
 }
+
