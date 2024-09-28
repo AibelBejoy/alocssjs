@@ -180,7 +180,7 @@ function emailSend(event) {
 
     sendMail(params);
     console.log("Email sent successfully");
-    setTimeout(() => window.location.href = 'apply-form-received.html', 3000);
+    setTimeout(() => window.location.href = 'apply-form-received.html', 5000);
 
   } else {
     document.querySelector('.validationText').innerHTML = "Form is invalid!";
