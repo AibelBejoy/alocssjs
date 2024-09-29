@@ -11,20 +11,22 @@
       <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="bg"></div>
-    <section class="one" id="one">
+    <div class="bg-1"></div>
+    <section class="one fac" cl id="one">
       <nav class="nav-one">
+        <a href="index.html">
         <div class="logo-grid" style=" margin-left: 20px;" >
           <div>
             <img src="images/logo.png" style="height: 60px;">
           </div>
           <div style="display: flex; justify-content: center;flex-direction: column;">
-            <H1 style="color: rgb(60, 60, 190);">St Aloysius</H1>
-            <p style="color: rgb(60, 60, 190);">HSS, ELTHURUTH</p>
+            <H1 style="color: rgb(69, 24, 24);">St Aloysius</H1>
+            <p style="color: rgb(69, 24, 24);">HSS, ELTHURUTH</p>
           </div>
         </div>
+      </a>
         <div>
-          <a href="contactus.html"><button class="c-us" style="margin-top:18px; color: rgb(60, 60, 190);">Contactus</button></a>
+          <a href="contactus.html"><button class="c-us">Contactus</button></a>
         </div>
       </nav>
     <nav class="nav-two">
@@ -39,43 +41,30 @@
     <div class="wel-apply-c" style="position: relative; display: flex;flex-direction: row; justify-content: center; align-items: center; margin-top: 350px;z-index: 1; margin-bottom: -190px;">
     <p class="wel-text" style="margin-top: 20px;">FACULTY</p>
      </div>
-    <div class="table" align="center" >
-    <table rules="all"  border="6" width="80%" cellpadding="20" bgcolor="black">
-      <tr align="center">
-        <th>Departments</th>
-        <th >Teachers</th>
-      </tr>
-      <tr align="center">
-        <td>Computer Science</td>    
-        <td>Roy</td>    
-      </tr>
-      <tr align="center">
-        <td>Physics</td>
-        <td>Vinod</td>    
-      </tr>
-      <tr align="center">
-        <td>Chemsitry</td>
-        <td>Manoj</td>    
-      </tr>
-      <tr align="center">
-        <td>Maths</td>
-        <td>Rose</td>    
-      </tr>
-      <tr align="center">
-        <td>English</td>
-        <td>Smitha</td>    
-      </tr>
-      <tr align="center">
-        <td>Malayalam</td>
-        <td>Philip</td>
-      </tr>
-      <tr align="center">
-        <td>Hindi</td>
-        <td>Renju</td>    
-      </tr>
-    </table>
+     <div class="dep-c">
+     
+    <div class="department" >
+
+      <h1 class="dep-h">DEPARTMENTS</h1>
+      <button onclick="changeTeacher('teachers/roy.jpg', 'Computer Science')">Department of<br>Computer Science</button>
+      <button onclick="changeTeacher('teachers/vinod.jpg', 'Physics')">Department of<br>Physics</button>
+      <button onclick="changeTeacher('teachers/manoj.jpg', 'Chemistry')">Department of<br>Chemistry</button>
+      <button onclick="changeTeacher('teachers/philip.jpg', 'Malayalam')">Department of<br>Malayalam</button>
+      <button onclick="changeTeacher('teachers/hindi.jpg', 'Hindi')" alt="IMG NOT FOUND">Department of<br>Hindi</button>
+      <button onclick="changeTeacher('teachers/maths.jpg', 'Maths')">Department of<br>Maths</button>
+
     </div>
+
+    <div class="department-info">
+      <div class="teacher">
+        <img src="teachers/roy.jpg" class="teacher-img" alt="Image Not Found">
+      </div>
+      <div class="teacher-info">
+        Computer science
+      </div>
+    </div>
+  </div>
     </section>
-    
+    <script src="script.js"></script>
   </body>
 </html>
