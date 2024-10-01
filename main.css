@@ -294,8 +294,8 @@ form input::placeholder{
   flex-direction: column;
   margin-top: 0px;
   background-color: transparent;
-  height: 80vh;
-  margin-top: -20px;
+  height: 90vh;
+  margin-top: -80px;
 
 }
 .department button{
@@ -309,7 +309,7 @@ form input::placeholder{
   font-size: 17px;
   margin-right: 20px;
   margin-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .department button:hover{
