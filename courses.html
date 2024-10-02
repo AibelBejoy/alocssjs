@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Aloysius HSS</title>
-      <link rel="stylesheet" href="main.css">
-      <link rel="stylesheet" href="anim.css">
 
+<head>
+  <title>Aloysius HSS</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="anim.css">
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="bg-1"></div>
-    <section class="one fac" style="overflow: hidden;" id="one">
-      <nav class="nav-one">
-        <a href="index.html">
-        <div class="logo-grid" style=" margin-left: 20px;" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-1"></div>
+  <section class="one" style="overflow: hidden;" id="one">
+
+    <nav class="nav-one">
+      <a href="index.html">
+        <div class="logo-grid" style=" margin-left: 20px;">
           <div>
             <img src="images/logo.png" style="height: 60px;">
           </div>
@@ -25,10 +27,10 @@
           </div>
         </div>
       </a>
-        <div>
-          <a href="contactus.html"><button class="c-us">Contactus</button></a>
-        </div>
-      </nav>
+      <div>
+        <a href="contactus.html"><button class="c-us">Contactus</button></a>
+      </div>
+    </nav>
     <nav class="nav-two">
       <ul>
         <li><a href="index.html"><button>Home</button></a></li>
@@ -38,54 +40,86 @@
         <li><a href="gallery.html"><button>Gallery</button></a></li>
       </ul>
     </nav>
-    <div class="wel-apply-c" style="position: relative; display: flex;flex-direction: row; justify-content: center; align-items: center; margin-top: 350px;z-index: 1; margin-bottom: -190px;">
-    <p class="wel-text" style="margin-top: 20px;">COURSES</p>
-     </div>
-     <div class="courses-c">
-      <div class="courses-cards">
-        <div class="card-image">
-          <img src="teachers/noimage.jpg">
-        </div>
-        <div class="courses-card-text">
-          <p>Computer Science</p>
-          <A href="">Click here to view more</A>
-        </div>
-      </div>
+    <div class="wel-apply-c"
+      style="position: relative; display: flex;flex-direction: row; justify-content: center; align-items: center; margin-top: 350px;z-index: 1; margin-bottom: -190px;">
+      <p class="wel-text" style="margin-top: 20px;">COURSES</p>
+    </div>
+    <div class="course-flex">
+      <div class="courses-c">
 
-      <div class="courses-cards">
-        <div class="card-image">
-          <img src="teachers/noimage.jpg">
+        <div class="courses-card">
+          <div class="card-image">
+            <img src="courses/cs.jpg">
+          </div>
+          <div class="courses-card-text">
+            <p>Computer Science</p>
+            <a
+              onclick="courseSelector('Computer Science','<ul><li>Computer Science</li><li>Chemistry</li><li>Physics</li><li>Maths</li><li>English</li><li>Malayalam/<br>Hindi</li></ul>','courses/cs.jpg')">
+              Click here to view more</a>
+          </div>
         </div>
-        <div class="courses-card-text">
-          <p>Biology Science</p>
-          <A href="">Click here to view more</A>
-        </div>
-      </div>
 
-      <div class="courses-cards">
-        <div class="card-image">
-          <img src="teachers/noimage.jpg">
+        <div class="courses-card">
+          <div class="card-image">
+            <img src="courses/bs.jpg">
+          </div>
+          <div class="courses-card-text">
+            <p>Biology Science</p>
+            <a
+              onclick="courseSelector('Biology Science','<ul><li>Biology</li><li>Chemistry</li><li>Physics</li><li>Maths</li><li>English</li><li>Malayalam/<br>Hindi</li></ul>','courses/bs.jpg')">
+              Click here to view more</a>
+          </div>
         </div>
-        <div class="courses-card-text">
-          <p>Electronic Science</p>
-          <A href="">Click here to view more</A>
-        </div>
-      </div>
 
-      <div class="courses-cards">
-        <div class="card-image">
-          <img src="teachers/noimage.jpg">
+        <div class="courses-card">
+          <div class="card-image">
+            <img src="courses/es.webp">
+          </div>
+          <div class="courses-card-text">
+            <p>Electronic Science</p>
+            <a
+              onclick="courseSelector('Electronic Science','<ul><li>Electronics</li><li>Chemistry</li><li>Physics</li><li>Maths</li><li>English</li><li>Malayalam/<br>Hindi</li></ul>','courses/es.webp')">
+              Click here to view more</a>
+          </div>
         </div>
-        <div class="courses-card-text">
-          <p>Commerce</p>
-          <A href="">Click here to view more</A>
-        </div>
-      </div>
-     
 
+        <div class="courses-card">
+          <div class="card-image">
+            <img src="courses/com.jpg">
+          </div>
+          <div class="courses-card-text">
+            <p>Commerce</p>
+            <a
+              onclick="courseSelector('Commerce','<ul><li>Accountancy</li><li>Business Studies</li><li>Economics</li><li>Computer Applications</li><li>English</li><li>Malayalam/<br>Hindi</li></ul>','courses/com.jpg')">
+              Click here to view more</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="courses-c-details-flex">
+      <div class="courses-c-details">
+        <img src="teachers/noimage.jpg">
+        <div class="courses-c-details-text">
+        <h2>course</h2>
+        <h4>Subjects:</h4>
+        <div class="subjects">
+        <ul>
+          <li>Computer Science</li>
+          <li>Chemistry</li>
+          <li>Physics</li>
+          <li>Maths</li>
+          <li>English</li>
+          <li>Hindi / <br>Malayalam</li>
+        </ul>
+         </div>
+        </div>
+         <a onclick="goBackCourses()">Go back</a>
+       </div>
+    </div>
     </div>
 
-    </section>
-    <script src="script.js"></script>
-  </body>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>

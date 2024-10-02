@@ -148,7 +148,19 @@ function changeTeacher(teacherImg, teacherName){
   document.querySelector('.teacher-info .name').innerHTML = teacherName;
 }
 
-
+function courseSelector(courseName,subjects,courseImage){
+  document.querySelector('.courses-c-details h2').innerHTML = courseName;
+  document.querySelector('.subjects').innerHTML = subjects;
+  document.querySelector('.courses-c-details').classList.add("visibility-on");
+  document.querySelector('.courses-c').classList.add("visibility-off");
+  const imgElement = document.querySelector('.courses-c-details img');
+  imgElement.src = courseImage;
+}
+function goBackCourses(){
+  document.querySelector('.courses-c-details').classList.remove("visibility-on");
+  document.querySelector('.courses-c').classList.remove("visibility-off");
+  
+}
 //------------------------------------------------IGNORE---------------------------------------------------//
 //not mine
 //EMAILJS.SCRIPT RELATED - START
