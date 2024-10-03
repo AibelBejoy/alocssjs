@@ -326,6 +326,7 @@ form input::placeholder{
   margin-bottom: 15px;
   margin-left: 15px;
   font-size: 21px;
+  color: white;
 }
 .department-info{
   background-color: white;
