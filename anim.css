@@ -11,10 +11,9 @@
 @keyframes fadeuniversal {
   from{
     opacity: .5;
-
   }
   to{
     opacity: 1;
-
   }
 }
+
