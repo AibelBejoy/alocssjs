@@ -122,25 +122,6 @@ document.querySelector('.Gender #male').addEventListener('change', validateGende
 document.querySelector('.Gender #female').addEventListener('change', validateGender);
 document.querySelector('.Gender #other').addEventListener('change', validateGender);
 
-function validityCheck() {
-  event.preventDefault();
-  let regValid = reg();
-  let dobValid = validateDOB();
-  let emailValid = validateEmailId();
-  let userIdValid = validateUserId();
-  let passwordValid = validatePassword();
-  let genderValid = validateGender();
-
-  if (regValid && dobValid && emailValid && userIdValid && passwordValid && genderValid) {
-    document.querySelector('.validationText').innerHTML = "Form is valid!";
-    return true;
-  } else {
-    document.querySelector('.validationText').innerHTML = "Form is invalid!";
-    return false;
-  }
-}
-
-document.querySelector('.formvalid').addEventListener('click', validityCheck);
 
 function changeTeacher(teacherImg, teacherName){
   const imgElement = document.querySelector('.teacher-img')
@@ -161,6 +142,26 @@ function goBackCourses(){
   document.querySelector('.courses-c').classList.remove("visibility-off");
   
 }
+
+function validityCheck() {
+  event.preventDefault();
+  let regValid = reg();
+  let dobValid = validateDOB();
+  let emailValid = validateEmailId();
+  let userIdValid = validateUserId();
+  let passwordValid = validatePassword();
+  let genderValid = validateGender();
+
+  if (regValid && dobValid && emailValid && userIdValid && passwordValid && genderValid) {
+    document.querySelector('.validationText').innerHTML = "Form is valid!";
+    return true;
+  } else {
+    alert("Form is invalid.\nPlease try again")
+    return false;
+  }
+}
+
+
 //------------------------------------------------IGNORE---------------------------------------------------//
 //not mine
 //EMAILJS.SCRIPT RELATED - START
@@ -198,7 +199,7 @@ function emailSend(event) {
     setTimeout(() => window.location.href = 'apply-form-received.html', 3500);
 
   } else {
-    document.querySelector('.validationText').innerHTML = "Form is invalid!";
+    
     console.log("Email not sent");
   }
 }

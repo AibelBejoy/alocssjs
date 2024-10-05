@@ -1,114 +1,232 @@
-@media (max-width: 420px){
-.nav-one .c-us{
-  margin-top: 40px;
-  margin-right: -30px;
-}
-
-  
-body{
-  animation: fadeuniversal 1s forwards;
-  margin: 0;
-  padding: 0;
-  height: 100vh; 
-  background-clip: cover;
-  background-image:  url(images/school.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 50%;
-  background-attachment: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-.nav-one{
-  height: 100px;
-  width: 100%;
-  justify-content: flex-start;
-}
-.nav-two {
-  position: fixed;
-  margin-top: 100px;
-  left: 0;
-  right: 0;
-  background-color: rgb(83, 118, 63);
-  height: 25px;
-  z-index: 30; 
-}
-.school-logo{
-  height: 70px;
-  margin-top: 10px;
-  margin-left: -10px;
-}
-.school-info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 90px;
-  font-size: 20px;
-  margin-left: -20px;
-}
-nav button {
-  margin-right: 25px;
-  font-size: 15px;
-  left: 10px;
-}
-.wel-apply-c{
-  margin-top: 450px;
-  height: 200px;
-}
-.apply{
-  margin-top: 0px;
-}
-.apply img{
-  height: 128px;
-
-}
-.apply h2{
-  font-size: 25px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
-}
-.wel-text{
-  font-size: 40px;
-  margin-bottom: 25px;
-  margin-top: 20px;
-}
-.form-grid {
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-}
-.form-c{
-  width: 85%;
-  margin-top: -170px;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-}
-form label{
-  font-size: 50px;
-}
-form input{
-  height: 60px;
-  width: 110%;
-  font-size: 30px;
-}
-.Gender input{
-  width: 20px;
-  height: 0px;
-
-  padding: 20px;
-}
-
-.Gender label {
-  display: flex; 
-  align-items: center; 
-
-}
-.form-b button{
-  height: 85px;
-  width: 180px;
-  font-size: 30px;
-}
+@media (max-width: 420px) {
+  .nav-one .c-us {
+    margin-top: 40px;
+    margin-right: -30px;
+  }
 
 
+  body {
+    animation: fadeuniversal 1s forwards;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-clip: cover;
+    background-image: url(images/school.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-one {
+    height: 100px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-two {
+    position: fixed;
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    background-color: rgb(83, 118, 63);
+    height: 25px;
+    z-index: 30;
+  }
+
+  .school-logo {
+    height: 70px;
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+
+  .school-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90px;
+    font-size: 20px;
+    margin-left: -20px;
+  }
+
+  nav button {
+    margin-right: 25px;
+    font-size: 15px;
+    left: 10px;
+  }
+
+  .wel-apply-c {
+    margin-top: 450px;
+    height: 200px;
+  }
+
+  .apply {
+    margin-top: 0px;
+  }
+
+  .apply img {
+    height: 128px;
+
+  }
+
+  .apply h2 {
+    font-size: 25px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .wel-text {
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    position: relative;
+    gap: 2.5rem;
+
+  }
+
+  .form-c {
+    width: 85%;
+    margin-top: -170px;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+
+  form label {
+    font-size: 20px;
+  }
+
+  form input {
+    height: 30px;
+    width: 62%;
+    font-size: 15px;
+  }
+
+  .Gender input {
+    width: 20px;
+    height: 0px;
+
+    padding: 20px;
+  }
+
+  .Gender label {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .form-b button {
+    height: 40px;
+    width: 90px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .form-b {
+    margin-left: 85px;
+  }
+
+  .validationText {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  .department {
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom: 0;
+    margin-top: 340px;
+  }
+
+  .dep-c {
+    height: 100%;
+
+  }
+
+  .department-info {
+    background-color: white;
+    height: 35%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .teacher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .teacher img {
+    height: 200px;
+  }
+
+  .teacher-info {
+    color: black;
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+
+  .teacher-info .name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    text-size-adjust: auto;
+
+  }
+
+  .card-c {
+    margin-top: 220px;
+    /* Maintain top margin */
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    position: relative;
+    top: 20px;
+    margin-left: 35px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .card img,
+  embed {
+    border-bottom: solid 40px white;
+    border-radius: 30px;
+    width: 90%;
+  }
+
+  .card-text {
+    margin-left: -35px;
+    left: 0;
+    right: 0;
+  }
 }

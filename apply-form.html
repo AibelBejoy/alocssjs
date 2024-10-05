@@ -52,12 +52,8 @@
       <li><a href="events.html"><button>Events</button></a></li>
       <li><a href="gallery.html"><button>Gallery</button></a></li>
     </ul>
-  </nav>
-
-    <div class="wel-apply-c"
-      style="position: relative; display: flex;flex-direction: row; justify-content: center; align-items: center; margin-top: 370px;z-index: 1; margin-bottom: -190px;">
+  </nav> 
       <p class="wel-text">APPLICATION FORM</p>
-    </div>
     <div class="form-parent-c">
       <div class="form-c" style="position: relative;">
         <form method="get">
@@ -66,15 +62,15 @@
               <label>Register No:</label><br>
               <input class="regNo" type="text" placeholder="Enter your 6 digit register no" maxlength="6"
                 oninput="reg()">
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
 
             <div class="DOB-c">
-              <label>Date of birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <label>Date of birth:</label><br>
               <input class="DOB-d" type="text" placeholder="DD" maxlength="2">&nbsp;/&nbsp;
               <input class="DOB-m" type="text" placeholder="MM" maxlength="2">&nbsp;/&nbsp;
               <input class="DOB-y" type="text" placeholder="YYYY" maxlength="4">
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
 
             <div class="Gender">
@@ -85,31 +81,29 @@
                   name="gender">FEMALE</label>&nbsp;&nbsp;
               <label for="other"><input type="radio" maxlength="6" id=other class=other value="other"
                   name="gender">Other</label>
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
 
             <div class="mailId">
               <label>Email:</label><br>
               <input type="email" placeholder="Enter you mail id" maxlength="24">
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
             <div class="userId">
               <label>Username:</label><br>
               <input type="text" placeholder="Set your Username" maxlength="6" pattern="">
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
 
             <div class="Password">
               <label>Password:</label><br>
               <input type="password" placeholder="Set your 6 digit Password" maxlength="6">
-              <p></p>
+              <p class="on-type-validationText"></p>
             </div>
 
-            <p class="validationText" style="margin-top: 50px;"></p>
+            <p class="validationText" style="display: block;"></p>
 
-            <div class="form-b"
-              style="display: flex;justify-content: right; right: 40px; bottom:20px;position: absolute; gap: 2rem;">
-              <button class="formvalid">Valid?</button>
+            <div class="form-b">
               <button class="formsubmit" type="submit">Submit</button>
             </div>
           </div>

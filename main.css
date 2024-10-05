@@ -86,7 +86,7 @@ nav button {
   color: rgb(69, 24, 24);
   margin-top: 16px;
   font-size: 20px;
-  
+
 
 }
 
@@ -119,10 +119,11 @@ nav a {
 }
 
 .one {
-
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
   height: 100vh;
-
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -154,13 +155,15 @@ nav a {
   font-weight: bold;
   font-size: 40px;
   z-index: 1;
-  padding-bottom: 460px;
   text-align: center;
   filter: drop-shadow(black 4px 4px 4px);
   animation: fade 2s forwards;
-  z-index: -20;
+  z-index: 20;
   color: white;
-  margin-top: 340px;
+  top: 120px;
+  left: 0;
+  right: 0;
+  justify-content: center;
 }
 
 .school-logo {
@@ -204,13 +207,14 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5rem;
+  position: relative;
+  margin-top: 230px;
 }
 
 .card {
   display: flex;
   height: 500px;
   position: relative;
-
 }
 
 .card img,
@@ -222,10 +226,15 @@ embed {
 
 .card-text {
   position: absolute;
+  margin-left: 90px;
+
   bottom: 5px;
-  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-size: 20px;
+  color: black;
 
 }
 
@@ -236,6 +245,7 @@ embed {
   flex-wrap: wrap;
   height: auto;
   z-index: 400;
+  margin-top: 200px;
 }
 
 .form-c {
@@ -289,16 +299,19 @@ form input::placeholder {
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.DOB-c {
+.form-b {
+  margin-left: -100px;
+  gap: 2rem;
   display: flex;
-  width: 400px;
 }
 
 .DOB-c input {
   width: 68px;
 }
+
 
 .form-b button {
   background-color: black;
@@ -312,6 +325,10 @@ form input::placeholder {
 
 }
 
+.on-type-validationText {
+  position: absolute;
+}
+
 .bg-1 {
   background-image: url(images/temp.jpeg);
   background-size: cover;
@@ -319,7 +336,7 @@ form input::placeholder {
   background-position: 100%;
   height: auto;
   z-index: -5;
-  overflow-y: hidden;
+
   position: fixed;
   top: 0;
   bottom: 0;
@@ -328,9 +345,12 @@ form input::placeholder {
 }
 
 .dep-c {
-  display: grid;
-  grid-template-columns: auto auto;
 
+  position: relative;
+  top: 170px;
+  left: 0;
+  right: 0;
+  justify-content: center;
 }
 
 .department {
@@ -342,7 +362,7 @@ form input::placeholder {
   margin-top: 0px;
   background-color: transparent;
   height: 90vh;
-  margin-top: -80px;
+  margin-top: -75px;
 
 }
 
@@ -380,15 +400,22 @@ form input::placeholder {
 .department-info {
   background-color: white;
   height: 70vh;
-  min-width: 90%;
-  width: 100%;
+  width: 900px;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   opacity: 1;
   margin-left: -15px;
   align-items: center;
-
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .teacher {
@@ -418,13 +445,15 @@ form input::placeholder {
 }
 
 .courses-c {
-  height: auto;
   display: flex;
-  margin-top: 30px;
+  height: auto;
+  flex-direction: row;
+  gap: 4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
   justify-content: center;
-  gap: 7rem;
-  animation: fadeuniversal 1s forwards;
-  bottom: -230px;
   flex-wrap: wrap;
 }
 
@@ -511,13 +540,6 @@ form input::placeholder {
 }
 
 
-.course-flex {
-  display: flex;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .courses-c-details a,
 .courses-c a {
