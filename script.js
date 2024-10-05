@@ -153,7 +153,7 @@ function validityCheck() {
   let genderValid = validateGender();
 
   if (regValid && dobValid && emailValid && userIdValid && passwordValid && genderValid) {
-    document.querySelector('.validationText').innerHTML = "Form is valid!";
+    
     return true;
   } else {
     alert("Form is invalid.\nPlease try again")
