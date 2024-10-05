@@ -548,8 +548,7 @@ form input::placeholder {
   cursor: pointer;
 }
 
-.courses-c-details a
-{
+.courses-c-details a {
   cursor: pointer;
   text-decoration: underline;
   color: black;
@@ -559,7 +558,8 @@ form input::placeholder {
 .courses-c-details-text {
   margin-top: 70px;
 }
-.courses-c-details ul li{
+
+.courses-c-details ul li {
   text-align: start;
 }
 

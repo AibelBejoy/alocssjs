@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <title>Received Application</title>
-    <style>
-      body {
-        background-color: black;
-         
-      }
-      .received {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 96vh;
-        overflow: hidden;
-        font-family: "Tektur", sans-serif;
-        border: solid 5px wheat;
-      }
-      h1, h3, h2 {
-        color: white; 
-      }
-      a{
-        color: white;
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  <title>Received Application</title>
+  <style>
+    body {
+      background-color: black;
+
+    }
+
+    .received {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 96vh;
+      overflow: hidden;
+      font-family: "Tektur", sans-serif;
+      border: solid 5px wheat;
+    }
+
+    h1,
+    h3,
+    h2 {
+      color: white;
+    }
+
+    a {
+      color: white;
+      font-size: 20px;
+    }
+
+    @media(max-width: 520px) {
+      h2 {
         font-size: 20px;
+        
       }
-    </style>
-  </head>
-  <body>
-    <div class="received">
-      <h1>GOT YOUR APPLICATION</h1>
-      <h2>A copy of the application has been sent to your e-mail id.</h2>
-      <h3>Check back later!</h3>
-      <a href="apply-form.html" style="margin-top: 100px;">Go back</a>
-    </div>
-  </body>
+    }
+  </style>
+</head>
+
+<body>
+  <div class="received">
+    <h1>GOT YOUR APPLICATION</h1>
+    <h2>A copy of the application has been sent to your e-mail id.</h2>
+    <h3>Check back later!</h3>
+    <a href="apply-form.html" style="margin-top: 100px;">Go back</a>
+  </div>
+</body>
+
 </html>
