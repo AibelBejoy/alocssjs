@@ -33,7 +33,7 @@ body {
 
 .nav-one {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   right: 0;
   left: 0;
@@ -47,6 +47,8 @@ body {
 .logo-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  width: 280px;
+  margin-left: -10px;
 }
 
 .nav-one button {
@@ -82,7 +84,9 @@ nav button {
 
 .nav-one .c-us {
   color: rgb(69, 24, 24);
-  margin-top: 15px;
+  margin-top: 16px;
+  font-size: 20px;
+  
 
 }
 
@@ -148,7 +152,7 @@ nav a {
 .wel-text {
   position: absolute;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   z-index: 1;
   padding-bottom: 460px;
   text-align: center;
@@ -156,6 +160,7 @@ nav a {
   animation: fade 2s forwards;
   z-index: -20;
   color: white;
+  margin-top: 340px;
 }
 
 .school-logo {
