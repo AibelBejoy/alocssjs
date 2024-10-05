@@ -25,6 +25,7 @@
     height: 100px;
     width: 100%;
     justify-content: flex-start;
+    z-index: 30;
   }
 
   .nav-two {
@@ -93,10 +94,11 @@
 
   .form-c {
     width: 85%;
-    margin-top: -170px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: auto;
+    z-index: 20;
   }
 
   form label {
@@ -228,5 +230,8 @@
     margin-left: -35px;
     left: 0;
     right: 0;
+  }
+  .courses-c-details{
+    width: 80%;
   }
 }
