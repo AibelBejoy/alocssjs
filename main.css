@@ -5,13 +5,14 @@
   font-family: "Tektur", sans-serif;
   color: white;
 }
-body{
+
+body {
   animation: fadeuniversal 1s forwards;
   margin: 0;
   padding: 0;
-  height: 100vh; 
+  height: 100vh;
   background-clip: cover;
-  background-image:  url(images/school.png);
+  background-image: url(images/school.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
@@ -20,7 +21,9 @@ body{
   right: 0;
   top: 0;
 }
-.nav-one ul,.nav-two ul{
+
+.nav-one ul,
+.nav-two ul {
   display: flex;
   justify-content: end;
   list-style: none;
@@ -28,9 +31,9 @@ body{
   flex-wrap: wrap;
 }
 
-.nav-one{
+.nav-one {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   right: 0;
   left: 0;
@@ -41,11 +44,12 @@ body{
 
 }
 
-.logo-grid{
-  display:grid;
+.logo-grid {
+  display: grid;
   grid-template-columns: 1fr 3fr;
 }
-.nav-one button{
+
+.nav-one button {
   margin-top: 0px;
 }
 
@@ -56,7 +60,7 @@ body{
   right: 0;
   background-color: rgb(83, 118, 63);
   height: 40px;
-  z-index: 30; 
+  z-index: 30;
 }
 
 nav button {
@@ -75,16 +79,19 @@ nav button {
   z-index: 20;
   transition: filter .2s;
 }
-.nav-one .c-us{
+
+.nav-one .c-us {
   color: rgb(69, 24, 24);
   margin-top: 15px;
 
 }
-.c-us:hover{
+
+.c-us:hover {
   filter: drop-shadow(black 1px 1px 20px);
   z-index: 60;
 
 }
+
 .nav-two button::before {
   content: " ";
   height: 3px;
@@ -102,13 +109,14 @@ nav button {
   height: 3px;
   z-index: 2;
 }
-nav a{
+
+nav a {
   text-decoration: none;
 }
 
 .one {
 
-  height: 100vh; 
+  height: 100vh;
 
   position: absolute;
   left: 0;
@@ -127,6 +135,15 @@ nav a{
   margin-left: 50px;
   position: relative;
 }*/
+.wel-apply-c {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  z-index: 1;
+}
 
 .wel-text {
   position: absolute;
@@ -141,49 +158,64 @@ nav a{
   color: white;
 }
 
+.school-logo {
+  height: 60px;
+}
 
+.school-info {
+  margin-top: 6px;
+}
 
-.apply{
+.apply {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 140px;
 }
-.apply img{
+
+.apply img {
   height: 120px;
   border-bottom: solid 4px white;
 }
 
-.apply h2{
+.apply h2 {
   font-size: 30px;
   color: white;
-  
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+
 }
-.apply-link{
+
+.apply-link {
   text-decoration: none;
   cursor: pointer;
+  height: 0px;
 }
-.card-c{
+
+.card-c {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:5rem;
+  gap: 5rem;
 }
-.card{
+
+.card {
   display: flex;
   height: 500px;
   position: relative;
-  
+
 }
-.card img,embed{
+
+.card img,
+embed {
   border-bottom: solid 40px white;
   border-radius: 30px;
   width: 400px;
 }
 
-.card-text{
+.card-text {
   position: absolute;
   bottom: 5px;
   left: 40px;
@@ -192,7 +224,7 @@ nav a{
 
 }
 
-.form-parent-c{
+.form-parent-c {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +232,8 @@ nav a{
   height: auto;
   z-index: 400;
 }
-.form-c{
+
+.form-c {
   display: flex;
   justify-content: center;
   background-color: black;
@@ -214,12 +247,14 @@ nav a{
   z-index: 400;
 
 }
-form label{
+
+form label {
   color: white;
   font-family: "Tektur", sans-serif;
   font-size: 24px;
 }
-form input{
+
+form input {
   background-color: gray;
   outline: none;
   padding: 5px 15px 5px 15px;
@@ -229,34 +264,38 @@ form input{
   border-radius: 10px;
   height: 40px;
 }
-form .Gender input{
+
+form .Gender input {
   height: auto;
 }
-form input::placeholder{
+
+form input::placeholder {
   color: black;
 }
 
-.form-grid div{
+.form-grid div {
   margin-bottom: 15px;
   color: white;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
-.form-grid{
+
+.form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.DOB-c{
+.DOB-c {
   display: flex;
   width: 400px;
 }
+
 .DOB-c input {
-  width: 68px;     
+  width: 68px;
 }
 
-.form-b button{
+.form-b button {
   background-color: black;
   height: 40px;
   outline: none;
@@ -268,24 +307,25 @@ form input::placeholder{
 
 }
 
-.bg-1{
+.bg-1 {
   background-image: url(images/temp.jpeg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   height: auto;
   z-index: -5;
   overflow-y: hidden;
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
+
 .dep-c {
   display: grid;
-  grid-template-columns: auto auto; 
-  
+  grid-template-columns: auto auto;
+
 }
 
 .department {
@@ -300,7 +340,8 @@ form input::placeholder{
   margin-top: -80px;
 
 }
-.department button{
+
+.department button {
   height: 70px;
   width: 150px;
   color: black;
@@ -314,21 +355,24 @@ form input::placeholder{
   margin-bottom: 10px;
 }
 
-.department button:hover{
+.department button:hover {
   filter: drop-shadow(black 1px 1px 3px);
   transition: background-color .2s, color .2s;
 }
-.department button:active{
+
+.department button:active {
   background-color: black;
   color: white;
 }
-.dep-h{
+
+.dep-h {
   margin-bottom: 15px;
   margin-left: 15px;
   font-size: 21px;
   color: white;
 }
-.department-info{
+
+.department-info {
   background-color: white;
   height: 70vh;
   min-width: 90%;
@@ -339,14 +383,16 @@ form input::placeholder{
   opacity: 1;
   margin-left: -15px;
   align-items: center;
- 
+
 }
-.teacher{
+
+.teacher {
   display: flex;
   align-items: center;
   margin-left: 30px;
 }
-.teacher img{
+
+.teacher img {
   height: 412px;
 }
 
@@ -358,16 +404,16 @@ form input::placeholder{
   margin-left: 30px;
 }
 
-.teacher-info .name{
+.teacher-info .name {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color:black;
+  color: black;
   text-size-adjust: auto;
 }
 
-.courses-c{
-  height: auto; 
+.courses-c {
+  height: auto;
   display: flex;
   margin-top: 30px;
   justify-content: center;
@@ -376,7 +422,8 @@ form input::placeholder{
   bottom: -230px;
   flex-wrap: wrap;
 }
-.courses-card{
+
+.courses-card {
   height: 380px;
   width: 280px;
   display: grid;
@@ -388,11 +435,13 @@ form input::placeholder{
   transform: scale(1);
   transition: transform .2s;
 }
-.courses-card:hover{
+
+.courses-card:hover {
   transform: scale(1.05);
 }
 
-.courses-card a, .courses-card p{
+.courses-card a,
+.courses-card p {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -407,12 +456,12 @@ form input::placeholder{
   border-radius: 20px;
 }
 
-.courses-c .card-image{
+.courses-c .card-image {
   display: flex;
   justify-content: center;
 }
 
-.courses-c-details{
+.courses-c-details {
   height: 100%;
   width: 100%;
   background-color: white;
@@ -424,25 +473,28 @@ form input::placeholder{
   border-radius: 50px;
   visibility: hidden;
   position: relative;
- 
+
 }
-.visibility-on{
+
+.visibility-on {
   visibility: visible;
 }
-.visibility-off{
+
+.visibility-off {
   visibility: hidden;
 }
 
-.courses-c-details h4, .courses-c-details h1{
+.courses-c-details h4,
+.courses-c-details h1 {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
-  
+
 }
 
-.courses-c-details img{
+.courses-c-details img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -454,7 +506,7 @@ form input::placeholder{
 }
 
 
-.course-flex{
+.course-flex {
   display: flex;
   height: auto;
   justify-content: center;
@@ -462,14 +514,17 @@ form input::placeholder{
   flex-direction: column;
 }
 
-.courses-c-details a,.courses-c a{
+.courses-c-details a,
+.courses-c a {
   cursor: pointer;
   text-decoration: underline;
 }
-.courses-c-details-text{
+
+.courses-c-details-text {
   margin-top: 70px;
 }
-.courses-c-details-flex{
+
+.courses-c-details-flex {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -477,9 +532,9 @@ form input::placeholder{
   align-items: center;
   height: 440px;
   width: 30%;
-  margin-top:-30px;
+  margin-top: -30px;
 }
 
-.subjects ul li{
-  color:black
+.subjects ul li {
+  color: black
 }

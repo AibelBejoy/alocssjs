@@ -1,0 +1,121 @@
+@media (max-width: 1000px){
+  .nav-one .c-us {
+    color: rgb(69, 24, 24);
+    top: 0px; /* Adjusted for visibility */
+    right: 0px; /* Adjusted to keep it visible */
+    position: absolute;
+    font-size: 40px;
+    width: 70px;
+  }
+  .c-us-c{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin-top: -130px;
+    margin-left: 540px;
+  }
+  
+body{
+  animation: fadeuniversal 1s forwards;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  background-clip: cover;
+  background-image:  url(images/school.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-attachment: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.nav-one{
+  height: 200px;
+  width: 100%;
+}
+.nav-two {
+  position: fixed;
+  margin-top: 200px;
+  left: 0;
+  right: 0;
+  background-color: rgb(83, 118, 63);
+  height: 50px;
+  z-index: 30; 
+}
+.school-logo{
+  height: 140px;
+  margin-top: 20px;
+}
+.school-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 180px;
+  font-size: 40px;
+}
+nav button {
+  margin-right: 90px;
+  font-size: 30px;
+  left: 35px;
+}
+.wel-apply-c{
+  margin-top: 900px;
+  height: 400px;
+}
+.apply{
+  margin-top: 200px;
+}
+.apply img{
+  height: 256px;
+
+}
+.apply h2{
+  font-size: 50px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+.wel-text{
+  font-size: 80px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.form-grid {
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+.form-c{
+  width: 85%;
+  margin-top: -170px;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+form label{
+  font-size: 50px;
+}
+form input{
+  height: 60px;
+  width: 110%;
+  font-size: 30px;
+}
+.Gender input{
+  width: 20px;
+  height: 0px;
+
+  padding: 20px;
+}
+
+.Gender label {
+  display: flex; 
+  align-items: center; 
+
+}
+.form-b button{
+  height: 85px;
+  width: 180px;
+  font-size: 30px;
+}
+
+
+}
