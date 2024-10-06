@@ -122,7 +122,6 @@
   .Gender input {
     width: 20px;
     height: 0px;
-
     padding: 20px;
   }
 
@@ -154,12 +153,16 @@
 
   .department {
     flex-direction: row;
-    height: 50px;
+    height: 30px;
     justify-content: center;
     align-items: flex-end;
     position: relative;
     bottom: 0;
     margin-top: 340px;
+  }
+  .department button{
+    height: 45px;
+    font-size: 15px;
   }
 
   .dep-c {
@@ -243,6 +246,17 @@
   }
   .courses-c-details{
     width:  90%;
-    height: 60%;
+    height: 50%;
+  }
+  .courses-c-details a{
+    margin-top: 0px;
+  }
+  .courses-c-details img{
+    width: 180px;
+    height: 180px;
+    margin-top: -55px;
+  }
+  .courses-c-details-text{
+    margin-top: 50px;
   }
 }
