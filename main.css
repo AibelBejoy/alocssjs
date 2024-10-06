@@ -352,7 +352,9 @@ form input::placeholder {
   top: 170px;
   left: 0;
   right: 0;
-  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .department {
@@ -364,7 +366,7 @@ form input::placeholder {
   margin-top: 0px;
   background-color: transparent;
   height: 90vh;
-  margin-top: -75px;
+  margin-top: -40px;
 
 }
 
@@ -401,20 +403,15 @@ form input::placeholder {
 
 .department-info {
   background-color: white;
-  height: 70vh;
-  width: 900px;
+  height: 70%;
+  width: 80%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   opacity: 1;
-  margin-left: -15px;
   align-items: center;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 0;
+  left: 200px;
   text-align: center;
   justify-content: center;
   align-items: center;
