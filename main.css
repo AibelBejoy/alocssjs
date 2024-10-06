@@ -403,9 +403,10 @@ form input::placeholder {
 
 .department-info {
   background-color: white;
+  border: solid 2px black;
   height: 70%;
   width: 80%;
-  margin-top: 20px;
+  margin-top: -30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   opacity: 1;
@@ -415,6 +416,8 @@ form input::placeholder {
   text-align: center;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+
 }
 
 .teacher {

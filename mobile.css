@@ -161,7 +161,7 @@
     align-items: flex-end;
     position: relative;
     bottom: 0;
-    margin-top: 340px;
+    margin-top: 320px;
   }
   .department button{
     height: 45px;
@@ -190,6 +190,7 @@
     right: 0;
     top: 0;
     text-align: center;
+    margin-top: 20px;
   }
 
   .teacher {
