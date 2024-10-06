@@ -124,8 +124,8 @@
 
   .Gender input {
     width: 20px;
-    height: 0px;
-    padding: 20px;
+    height: auto;
+    margin-right: 10px;
   }
 
   .Gender label {

@@ -283,6 +283,7 @@ form input {
 
 form .Gender input {
   height: auto;
+  margin-right: 5px;
 }
 
 form input::placeholder {
