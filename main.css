@@ -33,7 +33,7 @@ body {
 
 .nav-one {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   right: 0;
   left: 0;
@@ -41,6 +41,7 @@ body {
   background-color: white;
   height: 65px;
   z-index: 200;
+  width: 100%;
 
 }
 
@@ -48,7 +49,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 280px;
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 .nav-one button {
@@ -168,6 +169,7 @@ nav a {
 
 .school-logo {
   height: 60px;
+  margin-left: 55px;
 }
 
 .school-info {
