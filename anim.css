@@ -1,19 +1,21 @@
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-10%);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateY(0%);
   }
 }
+
 @keyframes fadeuniversal {
-  from{
+  from {
     opacity: .5;
   }
-  to{
+
+  to {
     opacity: 1;
   }
 }
-

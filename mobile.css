@@ -37,6 +37,12 @@
     height: 25px;
     z-index: 30;
   }
+ .nav-two li:hover{
+    background-color: rgb(66, 85, 55);
+  }
+  .nav-two button::before{
+    display: none;
+  }
 
   .school-logo {
     height: 70px;
@@ -107,7 +113,7 @@
 
   form input {
     height: 30px;
-    width: 62%;
+    width: 100%;
     font-size: 15px;
   }
 
@@ -124,16 +130,18 @@
 
   }
 
+  .form-b{
+    width: 100%;
+  }
+
   .form-b button {
     height: 40px;
     width: 90px;
     font-size: 15px;
-    margin-right: 10px;
+    margin-top: 10px;
+
   }
 
-  .form-b {
-    margin-left: 85px;
-  }
 
   .validationText {
     display: flex;

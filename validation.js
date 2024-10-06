@@ -122,27 +122,6 @@ document.querySelector('.Gender #male').addEventListener('change', validateGende
 document.querySelector('.Gender #female').addEventListener('change', validateGender);
 document.querySelector('.Gender #other').addEventListener('change', validateGender);
 
-
-function changeTeacher(teacherImg, teacherName){
-  const imgElement = document.querySelector('.teacher-img')
-  imgElement.src = teacherImg;
-  document.querySelector('.teacher-info .name').innerHTML = teacherName;
-}
-
-function courseSelector(courseName,subjects,courseImage){
-  document.querySelector('.courses-c-details h2').innerHTML = courseName;
-  document.querySelector('.subjects').innerHTML = subjects;
-  document.querySelector('.courses-c-details').classList.add("visibility-on");
-  document.querySelector('.courses-c').classList.add("visibility-off");
-  const imgElement = document.querySelector('.courses-c-details img');
-  imgElement.src = courseImage;
-}
-function goBackCourses(){
-  document.querySelector('.courses-c-details').classList.remove("visibility-on");
-  document.querySelector('.courses-c').classList.remove("visibility-off");
-  
-}
-
 function validityCheck() {
   event.preventDefault();
   let regValid = reg();
@@ -153,14 +132,13 @@ function validityCheck() {
   let genderValid = validateGender();
 
   if (regValid && dobValid && emailValid && userIdValid && passwordValid && genderValid) {
-    
+
     return true;
   } else {
     alert("Form is invalid.\nPlease try again")
     return false;
   }
 }
-
 
 //------------------------------------------------IGNORE---------------------------------------------------//
 //not mine
@@ -172,7 +150,7 @@ function sendMail(params) {
   emailjs.send(serviceID, templateID, params)
     .then(res => {
       console.log(res);
-      alert("Your message was sent successfully!");a
+      alert("Your message was sent successfully!"); a
     })
     .catch(err => console.log(err));
 }
@@ -181,7 +159,7 @@ function sendMail(params) {
 //EMAIL SENDING START
 function emailSend(event) {
   event.preventDefault();
-  
+
   let formValid = validityCheck();
 
   if (formValid) {
@@ -199,7 +177,7 @@ function emailSend(event) {
     setTimeout(() => window.location.href = 'apply-form-received.html', 3500);
 
   } else {
-    
+
     console.log("Email not sent");
   }
 }
