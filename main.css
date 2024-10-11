@@ -15,7 +15,8 @@ body {
   background-image: url(images/school.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
+
+  background-position: 50% 50%;
   background-attachment: fixed;
   left: 0;
   right: 0;
@@ -336,17 +337,28 @@ form input::placeholder {
   background-image: url(images/temp.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 50% 50%;
   height: auto;
   z-index: -5;
-
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-
+.bg-2 {
+  background-image: url(images/green-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: auto;
+  z-index: -5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .dep-c {
 
   position: relative;
@@ -570,4 +582,49 @@ form input::placeholder {
 
 .subjects ul li {
   color: black
+}
+
+.contact-head{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.contact-head h1{
+  font-size: 90px;
+  animation: downjump 1s forwards;
+  color: rgb(33, 64, 33);
+}
+
+.contact-head .head-p-contact{
+  margin-top: -20px;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation: downjump 1s forwards;
+  animation-delay: .5s;
+  color: rgb(33, 64, 33);
+}
+
+.maps{
+  position: absolute;
+  right: 50px;
+  top: 240px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.contact-details{
+  margin-top: 100px;
+  font-size: 20px;
+  color: rgb(33, 64, 33);
+
+}
+.contact-details p{
+  margin-bottom: 10px;
+  color: rgb(33, 64, 33);
+}
+.contact-details a{
+  color: rgb(72, 113, 72);
 }
